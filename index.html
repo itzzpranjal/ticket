@@ -3,115 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Event Ticket</title>
-    <link rel="stylesheet" href="style.css">
+    <title>college card</title>
 </head>
-<body>
-
-    <div class="ticket-container">
-        <div class="ticket">
-            <div class="header">
-                <img src="https://yt3.ggpht.com/a/AATXAJz4ytnMPA6T3RZ7jtdKz2BnMH1-1dgErjRQeOSnBA=s900-c-k-c0xffffffff-no-rj-mo" alt="College Logo" >
-                <h1>Horizon 2k25</h1>
-                <p>A Night to Remember</p> 
-            </div>
-
-            <div class="details">
-                <div class="detail-group">
-                    <span class="label">Date:</span>
-                    <span class="value">20 feb 2025</span>
-                </div>
-                <div class="detail-group">
-                    <span class="label">Time:</span>
-                    <span class="value">6 pm to 11 pm</span>
-                </div>
-                <div class="detail-group">
-                    <span class="label">Venue:</span>
-                    <span class="value">Pravara SVIT college, Nashik</span>
-                </div>
-                <div class="detail-group">
-                    <span class="label">Ticket Holder:</span>
-                    <span class="value">------</span>
-                </div>
-                <div class="detail-group">
-                    <span class="label">Ticket ID:</span>
-                    <span class="value">21002</span>
-                </div>
-            </div>
-
-            <div class="footer">
-                <p>Issued By: dept of computer engineering</p>
-                <p>Contact: pravara@gmail.com</p>
-                <p>Let's make it happen!! </p>
-            </div>
-        </div>
-    </div>
-
-</body>
 <style>
-    body {
-    font-family: 'Dancing Script', cursive; 
-    background-color: #e9edeb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.ticket-container {
-    perspective: 1000px; /* Adds a 3D effect */
-}
-
-.ticket {
-    background-color: #97788b;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-    
-
-.ticket:hover {
-    transform: rotateY(10deg);
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.header img {
-    max-width: 120px;
-    margin-bottom: 15px;
-}
-
-.details {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.detail-group {
-    width: 50%;
-    margin-bottom: 10px;
-}
-
-.label {
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-}
-
-@media (min-width: 768px) {
-    .ticket {
-        max-width: 600px;
+    .card{
+        border: 0.5px dashed black;
+        height: 340px;
+        width: 800px;
+        border-radius: 20px;
+        margin: 50px auto;
+        box-shadow: 0 0 5px grey;
+        display: flex;
+        font-family: sans-serif;
     }
-}
+    .student-part{
+        width: 40%;
+        border-radius: 20px;
+        box-shadow: 0 0 4px black;
+        border: 0.5px solid black;
+        border-right: none;
+        text-align: center;
+       background-color: antiquewhite;
+        
+    }
+    
+    .event-part{
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: 0 0 4px black;
+        border: 0.5px solid black;
+        border-left: dashed;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    .college-logo{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .ticket{
+        margin-left: 150px;
+        font-family: 'Courier New';
+    }
+    .ticket2{
+        margin-left: 190px;
+        font-family: 'Courier New';
+    }
+    .para{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* mobile*/
+    @media (max-width: 600px){
+        .card{
+            flex-direction: column;
+        }
+      .student-part{
+        width:400px;
+        height:auto;
+        
+      }
+      .event-part{
+        width:400px;
+        height:auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    }
+    /* tablet*/
+    @media (min-width:601px) and (max-width:800px){
+        .card{
+            flex-direction: column;
+        }
+        .student-part{
+        width:500px;
+        height: auto;
+        
+      }
+      .event-part{
+        width:500px;
+        height: auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    }
+    /* laptop*/
+    @media (min-width:801) and (max-width: 1024px){
+        .card{
+            flex-direction: column;
+        }
+        .student-part{
+        width:600px;
+        height: auto;
+        
+      }
+      .event-part{
+        width:600px;
+        height: auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    } 
+  .venue{
+    color: rgb(62, 62, 242);
+    font-size: 20px;
+  }
+  .para{
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
 </style>
+<body>
+    
+    <div class="card">
+       <div class="student-part">
+        <span class="ticket">Ticket no:312</span><br>
+        <img src="https://img.jagranjosh.com/images/2024/April/1042024/Logo_of_Sir_Visvesvaraya_Institute_of_Technology_Nashik_Logo.png"  class="college-logo"alt=" img">
+        <p class="para">Event: Freshers Party 2K25</p>
+        <p>Miss.PRANJAL ELAMAME TE(COMP)</p>
+        <p>You are inviting our college freshers Party</p>
+        <p>So Please Must Come</p>
+        <span class="venue">Venue:SVIT Enginnering College</span>
+        <p>Date: 8/3/2025</p>
+       </div>
+
+       <div class="event-part">
+        <span class="ticket2">Ticket no:312 </span><br>
+        <img src="https://img.jagranjosh.com/images/2024/April/1042024/Logo_of_Sir_Visvesvaraya_Institute_of_Technology_Nashik_Logo.png"  class="college-logo"alt=" img">
+        <p class="para">Event: Freshers Party 2K25</p>
+        <p>Miss.PRANJAL EALAMAME TE(COMP)</p>
+        <p>You are inviting our college freshers Party</p>
+        <p>So Please Must Come</p>
+        <span class="venue">Venue:SVIT Enginnering College</span>
+        <p>Date: 8/1/2025</p>
+       </div> 
+    </div>
+    
+</body>
 </html>
